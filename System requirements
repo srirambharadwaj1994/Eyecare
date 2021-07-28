@@ -1,0 +1,22 @@
+# Functional Requirement
+
+** Admin: ** The admin will create access for the doctors, users and regulate external access.
+** Optometrist: ** The optometrist when registered with the system will be able to create and accept appointments using this system. All patient records will be updated under this one system.
+** Patient: ** The patient will be able to access their file and check their medications via the prescribed opticians of the hospital. 
+** Doctor: ** Any external third party doctor’s information will be available on the system when granted access by the patient. The patient can revoke access at any time.
+
+# Hardware Requirement
+** Processor **                     				Pentium IV Processor+
+** Processor Speed **        			 		1Ghz+
+** Hard Disk **                   				20GB+
+** Main Memory **             	 			1GB+
+** Display Type **                				Color Monitor
+
+# Software Requirement
+** Development Tool (IDE) **     	   			Microsoft Visual Studio (.Net)
+** Language **                      	 			C# 
+** Server Side Script (Front end) **   	 		Asp.Net
+** Database (Back End) **       				MS-SQL SERVER
+** Web Server **                    				IIS (Internet Information Services)
+** Operating System **           				Windows 7,8,10
+** Web browser **                  				Internet Explorer, Mozilla Fire Fox etc.
