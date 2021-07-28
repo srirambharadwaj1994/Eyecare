@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6B71223D-8F85-4888-AA18-035AA125FC05}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ECS</RootNamespace>
+    <AssemblyName>ECS</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\OptometristDetails.aspx" />
+    <Content Include="Admin\ViewAppointmentDetails.aspx" />
+    <Content Include="Admin\ViewEditOptometristnfo.aspx" />
+    <Content Include="Admin\ViewPatientsdetails.aspx" />
+    <Content Include="Patient\DoctorsDetails.aspx" />
+    <Content Include="image\Admin.png" />
+    <Content Include="image\Banner.jpg" />
+    <Content Include="image\delete-icon.png" />
+    <Content Include="image\dl_calendar.png" />
+    <Content Include="image\edit_icon.png" />
+    <Content Include="image\emp.jpg" />
+    <Content Include="image\Login-Button.jpg" />
+    <Content Include="image\Male_Doctor.png" />
+    <Content Include="image\medic.jpeg" />
+    <Content Include="image\opp.png" />
+    <Content Include="image\optom.jpg" />
+    <Content Include="image\patient-icon.jpg" />
+    <Content Include="image\register.png" />
+    <Content Include="image\submit_arrow.png" />
+    <Content Include="image\update.jpg" />
+    <Content Include="image\user_login.jpg" />
+    <Content Include="Login\AboutUs.aspx" />
+    <Content Include="Login\AdminLogin.aspx" />
+    <Content Include="Login\OptometristLogin.aspx" />
+    <Content Include="Login\Home.aspx" />
+    <Content Include="Login\PatientsLogin.aspx" />
+    <Content Include="Login\Register.aspx" />
+    <Content Include="Optometrist\ConfirmedAppointements.aspx" />
+    <Content Include="Optometrist\MedicationDetails.aspx" />
+    <Content Include="Optometrist\ViewEditMedicationDetails.aspx" />
+    <Content Include="Patient\AppointementDetails.aspx" />
+    <Content Include="Patient\ProfileUpdate.aspx" />
+    <Content Include="Patient\Reports.aspx" />
+    <Content Include="Patient\ViewOptometristDetails.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\OptometristDetails.aspx.cs">
+      <DependentUpon>OptometristDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\OptometristDetails.aspx.designer.cs">
+      <DependentUpon>OptometristDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ViewAppointmentDetails.aspx.cs">
+      <DependentUpon>ViewAppointmentDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ViewAppointmentDetails.aspx.designer.cs">
+      <DependentUpon>ViewAppointmentDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ViewEditOptometristnfo.aspx.cs">
+      <DependentUpon>ViewEditOptometristnfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ViewEditOptometristnfo.aspx.designer.cs">
+      <DependentUpon>ViewEditOptometristnfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ViewPatientsdetails.aspx.cs">
+      <DependentUpon>ViewPatientsdetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ViewPatientsdetails.aspx.designer.cs">
+      <DependentUpon>ViewPatientsdetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Patient\DoctorsDetails.aspx.cs">
+      <DependentUpon>DoctorsDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Patient\DoctorsDetails.aspx.designer.cs">
+      <DependentUpon>DoctorsDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\OptometristLogin.aspx.cs">
+      <DependentUpon>OptometristLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\OptometristLogin.aspx.designer.cs">
+      <DependentUpon>OptometristLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Login.Master.cs">
+      <DependentUpon>Login.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\Login.Master.designer.cs">
+      <DependentUpon>Login.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Login\PatientsLogin.aspx.cs">
+      <DependentUpon>PatientsLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\PatientsLogin.aspx.designer.cs">
+      <DependentUpon>PatientsLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Optometrist\ConfirmedAppointements.aspx.cs">
+      <DependentUpon>ConfirmedAppointements.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Optometrist\ConfirmedAppointements.aspx.designer.cs">
+      <DependentUpon>ConfirmedAppointements.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Optometrist\Optometrist.Master.cs">
+      <DependentUpon>Optometrist.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Optometrist\Optometrist.Master.designer.cs">
+      <DependentUpon>Optometrist.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Optometrist\MedicationDetails.aspx.cs">
+      <DependentUpon>MedicationDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Optometrist\MedicationDetails.aspx.designer.cs">
+      <DependentUpon>MedicationDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Optometrist\ViewEditMedicationDetails.aspx.cs">
+      <DependentUpon>ViewEditMedicationDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Optometrist\ViewEditMedicationDetails.aspx.designer.cs">
+      <DependentUpon>ViewEditMedicationDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Patient\AppointementDetails.aspx.cs">
+      <DependentUpon>AppointementDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Patient\AppointementDetails.aspx.designer.cs">
+      <DependentUpon>AppointementDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Patient\Patient.Master.cs">
+      <DependentUpon>Patient.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Patient\Patient.Master.designer.cs">
+      <DependentUpon>Patient.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Patient\ProfileUpdate.aspx.cs">
+      <DependentUpon>ProfileUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Patient\ProfileUpdate.aspx.designer.cs">
+      <DependentUpon>ProfileUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Patient\Reports.aspx.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Patient\Reports.aspx.designer.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Patient\ViewOptometristDetails.aspx.cs">
+      <DependentUpon>ViewOptometristDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Patient\ViewOptometristDetails.aspx.designer.cs">
+      <DependentUpon>ViewOptometristDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Login\Login.Master" />
+    <Content Include="Optometrist\Optometrist.Master" />
+    <Content Include="Admin\Admin.Master" />
+    <Content Include="Patient\Patient.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:2034/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
